@@ -45,7 +45,7 @@ const Navbar = () => {
         <ul>
           <li>
             <select className="abc">
-              <option selected>Our Services</option>
+              <option defaultValue>Our Services</option>
               <option value="1">Individual</option>
               <option value="2">Tax Exempt</option>
               <option value="3">Partnership</option>

@@ -110,3 +110,10 @@ main {
   background: var(--clr-primary-5);
   color: var(--clr-primary-1);
 }
+.contactMe {
+  border-radius: 10px;
+  width: 60vw;
+  margin: 0 auto;
+  padding: 25px;
+  background-color: lightblue;
+}

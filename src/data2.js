@@ -28,14 +28,14 @@ const people = [
       "Marfa af yr 3 wolf moon kogi, readymade distillery asymmetrical seitan kale chips fingerstache cloud bread mustache twee messenger bag. ",
   },
   {
-    id: 4,
+    id: 5,
     name: "11205",
     title: "S Corporation",
     quote:
       "Marfa af yr 3 wolf moon kogi, readymade distillery asymmetrical seitan kale chips fingerstache cloud bread mustache twee messenger bag. ",
   },
   {
-    id: 5,
+    id: 6,
     name: "1120",
     title: "C Corporation",
     quote:
