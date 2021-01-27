@@ -5,22 +5,33 @@ function About() {
   return (
     <>
       <h1>About Us</h1>
-      <div className="contactInfo">
-        <div className="myImageDiv">
-          <img className="myImage" src="/me-1.png" alt="" />
-        </div>
-        <div className="myInfo">
-          <h3>Auditor</h3>
-          <p>
-            lorem ipsum dolor sit amet, consectetur lorem lorem Lorem ipsum
-            dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-            ea commodo consequat. Duis aute irure dolor in reprehenderit in
-            voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-            officia deserunt mollit anim id est laborum.
-          </p>
+
+      <div className="myCard" style={{ marginLeft: "0 auto" }}>
+        <div class="card mb-6" style={{ maxWidth: "100%" }}>
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img class="cardImg" src="./me-1.jpg" alt="..." />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Your Position</h5>
+                <p class="card-text">
+                  This is a wider card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer. This is a wider card with supporting text below as a
+                  natural lead-in to additional content. This content is a
+                  little bit longer. This is a wider card with supporting text
+                  below as a natural lead-in to additional content. This content
+                  is a little bit longer. This is a wider card with supporting
+                  text below as a natural lead-in to additional content. This
+                  content is a little bit longer.
+                </p>
+                <p class="card-text">
+                  <small class="text-muted">some secondary info if any</small>
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </>

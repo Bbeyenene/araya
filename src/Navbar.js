@@ -42,6 +42,18 @@ const Navbar = () => {
             })}
           </ul>
         </div>
+        <ul>
+          <li>
+            <select className="abc">
+              <option selected>Our Services</option>
+              <option value="1">Individual</option>
+              <option value="2">Tax Exempt</option>
+              <option value="3">Partnership</option>
+              <option value="4">S Corporation</option>
+              <option value="5">C Corporation</option>
+            </select>
+          </li>
+        </ul>
         <ul className="social-icons">
           {social.map((socialIcon) => {
             const { id, url, icon } = socialIcon;

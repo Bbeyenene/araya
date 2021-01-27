@@ -2,6 +2,11 @@ import React, { useState, useEffect } from "react";
 import { FiChevronRight, FiChevronLeft } from "react-icons/fi";
 import { FaQuoteRight } from "react-icons/fa";
 import data from "./data2";
+import Ccorporation from "./services/Ccorporation";
+import Individual from "./services/Individual";
+import Scorporation from "./services/Scorporation";
+import Taxexempt from "./services/Taxexempt";
+import Partnership from "./services/Partnership";
 import "./alternative.css";
 function App() {
   const [people] = useState(data);
@@ -87,12 +92,21 @@ function App() {
           (773)677-3348
         </h3>
       </div>
-      <section className="section">
+
+      <section className="">
         <div className="title">
           <h2>
             <span>/ </span>Our Services
           </h2>
         </div>
+        <Individual />
+        <Scorporation />
+        <Ccorporation />
+        <Taxexempt />
+        <Partnership />
+      </section>
+
+      <section className="section">
         <div className="section-center">
           {people.map((person, personIndex) => {
             const { id, name, title, quote } = person;
