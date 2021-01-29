@@ -1,14 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { FiChevronRight, FiChevronLeft } from "react-icons/fi";
 import { FaQuoteRight } from "react-icons/fa";
+
 import data from "./data2";
-// import Ccorporation from "./services/Ccorporation";
 import Individual from "./services/Individual";
-// import Scorporation from "./services/Scorporation";
-// import Taxexempt from "./services/Taxexempt";
-// import Partnership from "./services/Partnership";
-// import "./alternative.css";
-function App() {
+
+import "./home.css";
+function Home() {
   const [people] = useState(data);
   const [index, setIndex] = React.useState(0);
 
@@ -145,4 +143,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;

@@ -1,5 +1,5 @@
 import React from "react";
-import "../alternative.css";
+import "../home.css";
 function Individual() {
   return (
     <section className="section title">

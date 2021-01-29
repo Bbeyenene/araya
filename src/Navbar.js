@@ -24,7 +24,7 @@ const Navbar = () => {
         <div className="nav-header">
           <img src={logo} className="logo" alt="logo" />
 
-          <h2 className="hea">Business services</h2>
+          <h2 className="hea">Zara</h2>
 
           <button className="nav-toggle" onClick={toggleLinks}>
             <FaBars />
@@ -46,11 +46,11 @@ const Navbar = () => {
           <li>
             <select className="abc">
               <option defaultValue>Our Services</option>
-              <option value="1">Individual</option>
-              <option value="2">Tax Exempt</option>
-              <option value="3">Partnership</option>
-              <option value="4">S Corporation</option>
-              <option value="5">C Corporation</option>
+              <option value="/individual">Individual</option>
+              <option value="/taxexempt">Tax Exempt</option>
+              <option value="/partnership">Partnership</option>
+              <option value="/scorporation">S Corporation</option>
+              <option value="/ccorporation">C Corporation</option>
             </select>
           </li>
         </ul>
