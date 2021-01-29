@@ -24,7 +24,7 @@ const Navbar = () => {
         <div className="nav-header">
           <img src={logo} className="logo" alt="logo" />
 
-          <h2 className="hea">Araya Tax Refund</h2>
+          <h2 className="hea">Business services</h2>
 
           <button className="nav-toggle" onClick={toggleLinks}>
             <FaBars />

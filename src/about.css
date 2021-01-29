@@ -9,7 +9,6 @@ h1 {
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
-  /* border: 1px solid red; */
 }
 .myImageDiv {
   width: 35%;
@@ -30,15 +29,20 @@ h1 {
   box-shadow: 8px 8px 8px 8px rgb(48, 48, 48);
 }
 .myCard {
-  border: 1px solid gray;
   border-radius: 6px;
   margin: 0 auto;
   margin-bottom: 100px;
-  max-width: 840px;
+  max-width: 1040px;
   width: 90vw;
+  color: #ffffff;
 }
 .card {
   padding: 2em;
+  background-color: rgb(9, 136, 119);
+}
+.card p {
+  color: #ffffff;
+  font-size: 18px;
 }
 .cardImg {
   width: 200px;

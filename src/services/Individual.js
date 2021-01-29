@@ -2,7 +2,7 @@ import React from "react";
 import "../alternative.css";
 function Individual() {
   return (
-    <section className="section">
+    <section className="section title">
       <div className="section-center">
         <article className="activeSlide">
           <p className="title name-t">Individual</p>

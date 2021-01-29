@@ -19,56 +19,56 @@ const Contact = () => {
           method="post"
           action="https://api.formcake.com/api/form/e2ccce6c-6bcd-481b-b043-7db7b60f5d2f/submission"
         >
-          <div class="row">
-            <div class="col-md-6">
-              <div class="md-form mb-0">
+          <div className="row">
+            <div className="col-md-6">
+              <div className="md-form mb-0">
                 <input
                   type="text"
                   id="name"
                   name="name"
-                  class="form-control"
+                  className="form-control"
                   placeholder="Your name"
                 />
               </div>
             </div>
-            <div class="col-md-6">
-              <div class="md-form mb-0">
+            <div className="col-md-6">
+              <div className="md-form mb-0">
                 <input
                   type="text"
                   id="email"
                   name="email"
-                  class="form-control"
+                  className="form-control"
                   placeholder="Your email"
                 />
               </div>
             </div>
           </div>
-          <div class="row">
-            <div class="col-md-12">
-              <div class="md-form mb-0">
+          <div className="row">
+            <div className="col-md-12">
+              <div className="md-form mb-0">
                 <input
                   type="text"
                   id="subject"
                   name="subject"
-                  class="form-control"
+                  className="form-control"
                   placeholder="Subject"
                 />
               </div>
             </div>
           </div>
-          <div class="row">
-            <div class="col-md-12">
-              <div class="md-form">
+          <div className="row">
+            <div className="col-md-12">
+              <div className="md-form">
                 <textarea
                   type="text"
                   id="message"
                   name="message"
                   rows="2"
-                  class="form-control md-textarea"
+                  className="form-control md-textarea"
                   placeholder="Message"
                 ></textarea>
               </div>
-              <button type="submit" class="btn btn-dark">
+              <button type="submit" className="btn btn-dark">
                 Submit
               </button>
             </div>
