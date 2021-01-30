@@ -1,11 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { FiChevronRight, FiChevronLeft } from "react-icons/fi";
 import { FaQuoteRight } from "react-icons/fa";
-
 import data from "./data2";
-import Individual from "./services/Individual";
-
 import "./home.css";
+
 function Home() {
   const [people] = useState(data);
   const [index, setIndex] = React.useState(0);
@@ -97,11 +95,6 @@ function Home() {
               <span>/ </span>Our Services
             </h2>
           </div>
-          <Individual />
-          {/* <Scorporation />
-          <Ccorporation />
-          <Taxexempt />
-          <Partnership /> */}
         </section>
 
         <section className="section title1">

@@ -1,12 +1,12 @@
 import React from "react";
-import "../home.css";
-function Partnership() {
+import "../home/home.css";
+function Ccorporation() {
   return (
     <section className="section">
       <div className="section-center">
         <article className="activeSlide">
-          <p className="title name-t">Partnership</p>
-          <h4 className="name-t">1065</h4>
+          <p className="title name-t">C Corporation</p>
+          <h4 className="name-t">1120</h4>
           <p className="text text-p">
             Fingerstache umami squid, kinfolk subway tile selvage tumblr man
             braid viral kombucha gentrify fanny pack raclette pok pok
@@ -23,4 +23,4 @@ function Partnership() {
     </section>
   );
 }
-export default Partnership;
+export default Ccorporation;

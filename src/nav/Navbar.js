@@ -2,8 +2,11 @@ import React, { useState, useRef, useEffect } from "react";
 import { FaBars } from "react-icons/fa";
 import { links, social } from "./data";
 import logo from "./logo.svg";
+import { BsGrid3X3GapFill } from "react-icons/bs";
+import { useGlobalContext } from "../context";
 
 const Navbar = () => {
+  const { openSidebar } = useGlobalContext();
   const [showLinks, setShowLinks] = useState(false);
   const linksContainerRef = useRef(null);
   const linksRef = useRef(null);
@@ -23,7 +26,9 @@ const Navbar = () => {
       <div className="nav-center">
         <div className="nav-header">
           <img src={logo} className="logo" alt="logo" />
-
+          <button onClick={openSidebar} className=" logo sidebar-toggle logo">
+            <BsGrid3X3GapFill />
+          </button>
           <h2 className="hea">Zara</h2>
 
           <button className="nav-toggle" onClick={toggleLinks}>
@@ -42,18 +47,7 @@ const Navbar = () => {
             })}
           </ul>
         </div>
-        <ul>
-          <li>
-            <select className="abc">
-              <option defaultValue>Our Services</option>
-              <option value="/individual">Individual</option>
-              <option value="/taxexempt">Tax Exempt</option>
-              <option value="/partnership">Partnership</option>
-              <option value="/scorporation">S Corporation</option>
-              <option value="/ccorporation">C Corporation</option>
-            </select>
-          </li>
-        </ul>
+
         <ul className="social-icons">
           {social.map((socialIcon) => {
             const { id, url, icon } = socialIcon;

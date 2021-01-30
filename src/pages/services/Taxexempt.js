@@ -1,12 +1,12 @@
 import React from "react";
-import "../home.css";
-function Scorporation() {
+import "../home/home.css";
+function Taxexempt() {
   return (
     <section className="section">
       <div className="section-center">
         <article className="activeSlide">
-          <p className="title name-t">S Corporation</p>
-          <h4 className="name-t">11205</h4>
+          <p className="title name-t">Tax Exempt</p>
+          <h4 className="name-t">990</h4>
           <p className="text text-p">
             Fingerstache umami squid, kinfolk subway tile selvage tumblr man
             braid viral kombucha gentrify fanny pack raclette pok pok
@@ -23,4 +23,4 @@ function Scorporation() {
     </section>
   );
 }
-export default Scorporation;
+export default Taxexempt;

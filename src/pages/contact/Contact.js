@@ -5,13 +5,13 @@ const Contact = () => {
     <>
       <h1 style={{ textAlign: "center" }}>Contact Information</h1>
       <div className="contactMe">
-        <h2>Araya Elma</h2>
+        <h2>John Dee</h2>
         <h3>Chicago, IL</h3>
         <h3>
-          Phone Number: <span>(773)677-3348</span>
+          Phone Number: <span>(123)456-7890</span>
         </h3>
         <h3>
-          Email: <a href="mailto:aelma1961@gmail.com">aelma1961@gmail.com</a>
+          Email: <a href="mailto:aelma1961@gmail.com">example@gmail.com</a>
         </h3>
         <form
           name="contact-form"

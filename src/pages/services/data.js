@@ -9,26 +9,26 @@ import {
 export const links = [
   {
     id: 1,
-    url: "/",
-    text: "home",
+    url: "/individual",
+    text: "Individual",
     icon: <FaHome />,
   },
   {
     id: 2,
-    url: "/team",
-    text: "team",
+    url: "/taxexempt",
+    text: "Taxexempt",
     icon: <FaUserFriends />,
   },
   {
     id: 3,
-    url: "/projects",
-    text: "projects",
+    url: "/partnership",
+    text: "Partnership",
     icon: <FaFolderOpen />,
   },
   {
     id: 4,
-    url: "/calendar",
-    text: "calendar",
+    url: "/ccorporation",
+    text: "Ccorporation",
     icon: <FaCalendarAlt />,
   },
   {

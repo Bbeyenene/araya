@@ -1,28 +1,26 @@
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import React, { useState, useEffect } from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { FiChevronRight, FiChevronLeft } from "react-icons/fi";
 import { FaQuoteRight } from "react-icons/fa";
-import data from "./data2";
-import Navbar from "./Navbar";
-import About from "./About";
-import Contact from "./Contact";
-import Home from "./Home";
-import Projects from "./Projects";
-import Individual from "./services/Individual";
-import Scorporation from "./services/Scorporation";
-import Taxexempt from "./services/Taxexempt";
-import Partnership from "./services/Partnership";
-import Ccorporation from "./services/Ccorporation";
-import "./home.css";
 
-// import { BsGrid3X3GapFill } from "react-icons/bs";
-// import { useGlobalContext } from "./context";
-// import { AppProvider } from "./context";
-// import Sidebar from "./Sidebar";
-// import Modal from "./Modal";
+import Navbar from "./nav/Navbar";
+import Sidebar from "./nav/Sidebar";
+
+import { AppProvider } from "./context";
+import data from "./pages/home/data2";
+import Home from "./pages/home/Home";
+import About from "./pages/about/About";
+import Contact from "./pages/contact/Contact";
+import Projects from "./pages/projects/Projects";
+import Individual from "./pages/services/Individual";
+import Scorporation from "./pages/services/Scorporation";
+import Taxexempt from "./pages/services/Taxexempt";
+import Partnership from "./pages/services/Partnership";
+import Ccorporation from "./pages/services/Ccorporation";
+
+import "./pages/home/home.css";
 
 function App() {
-  // const { openSidebar } = useGlobalContext();
   const [people] = useState(data);
   const [index, setIndex] = React.useState(0);
 
@@ -48,38 +46,13 @@ function App() {
   return (
     <>
       <Router>
-        <Navbar />
+        <AppProvider>
+          <Navbar />
+          <Sidebar />
+        </AppProvider>
         <Switch>
-          <Route path="/contact">
-            <Contact />
-          </Route>
-          <Route path="/about">
-            <About />
-          </Route>
-          <Route path="/projects">
-            <Projects />
-          </Route>
-          <Route path="/individual">
-            <Individual />
-          </Route>
-          <Route path="/scorporation">
-            <Scorporation />
-          </Route>
-          <Route path="/taxexempt">
-            <Taxexempt />
-          </Route>
-          <Route path="/partnership">
-            <Partnership />
-          </Route>
-          <Route path="/ccorporation">
-            <Ccorporation />
-          </Route>
-          Ccorporation
           <Route exact path="/">
             <Home>
-              {/* <button onClick={openSidebar} className="sidebar-toggle">
-                <BsGrid3X3GapFill />
-              </button> */}
               <section className="section">
                 <div className="title">
                   <h2>
@@ -121,13 +94,33 @@ function App() {
               </section>
             </Home>
           </Route>
+          <Route path="/contact">
+            <Contact />
+          </Route>
+          <Route path="/about">
+            <About />
+          </Route>
+          <Route path="/projects">
+            <Projects />
+          </Route>
+
+          <Route path="/individual">
+            <Individual />
+          </Route>
+          <Route path="/scorporation">
+            <Scorporation />
+          </Route>
+          <Route path="/taxexempt">
+            <Taxexempt />
+          </Route>
+          <Route path="/partnership">
+            <Partnership />
+          </Route>
+          <Route path="/ccorporation">
+            <Ccorporation />
+          </Route>
         </Switch>
       </Router>
-      {/* <AppProvider>
-        <Home />
-        <Sidebar />
-        <Modal />
-      </AppProvider> */}
     </>
   );
 }

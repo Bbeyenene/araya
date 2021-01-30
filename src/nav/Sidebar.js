@@ -1,8 +1,9 @@
 import React from "react";
-import logo from "./logo.svg";
-import { useGlobalContext } from "./context";
 import { FaTimes } from "react-icons/fa";
-import { links } from "./services/data";
+import logo from "../pages/services/logo.svg";
+import { useGlobalContext } from "../context";
+import { links } from "../pages/services/data";
+import "./sidebar.css";
 
 const Sidebar = () => {
   const { isSidebarOpen, closeSidebar } = useGlobalContext();
@@ -15,12 +16,12 @@ const Sidebar = () => {
           <FaTimes />
         </button>
       </div>
-      <ul className="links">
+      <ul className="links2">
         {links.map((link) => {
           const { id, url, text, icon } = link;
           return (
             <li key={id}>
-              <a href={url}>
+              <a className="ancker" href={url}>
                 {icon}
                 {text}
               </a>
